@@ -6,7 +6,6 @@ const initialState = {
 }
 
 const setHomeReducer = ( state, { resultGet }) => {
-    console.log('payload >>>', resultGet)
     return {
         ...state,
         homeReducer: resultGet
