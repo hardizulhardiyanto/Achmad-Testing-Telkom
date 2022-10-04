@@ -21,7 +21,6 @@ export default function HomeItem() {
             //willMount
         };
     }, [])
-    console.log('checKData >>', home)
     return (
         <div>
             <h1 className={styles.title}>
