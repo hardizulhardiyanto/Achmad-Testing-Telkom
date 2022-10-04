@@ -5,10 +5,11 @@ const initialState = {
     homeReducer: undefined
 }
 
-const setHomeReducer = ( state, {payload}) => {
+const setHomeReducer = ( state, { resultGet }) => {
+    console.log('payload >>>', resultGet)
     return {
         ...state,
-        homeReducer: payload
+        homeReducer: resultGet
     }
 }
 

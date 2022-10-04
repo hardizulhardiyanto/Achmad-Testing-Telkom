@@ -8,7 +8,7 @@ import {HOME_ACT_ADD_REPOS, HOME_ACT_SET_REPOS} from "../action";
  * @access  Private
  */
 function* getRepositoryMe(payload) {
-    const resultGet = yield call(api.getRepository, payload);
+    let resultGet = yield call(api.getRepository, payload);
     if (!!resultGet){
         yield put ({type: HOME_ACT_SET_REPOS, resultGet})
     } else {
