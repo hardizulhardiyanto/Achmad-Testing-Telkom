@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {repositoryUrl} from "./index";
 
-const token = "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";
+const token = "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";
 //URL
 axios.defaults.baseURL = 'https://api.github.com';
 axios.defaults.headers.common['Authorization'] = ` Bearer ${token}`;
