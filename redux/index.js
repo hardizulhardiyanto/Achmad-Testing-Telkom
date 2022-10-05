@@ -11,7 +11,7 @@ const middleware = [];
 const sagaMiddleware = createSagaMiddleware();
 
 middleware.push(sagaMiddleware);
-middleware.push(createLogger()); // for development purposes
+// middleware.push(createLogger()); // for development purposes
 
 const enhancers = [applyMiddleware(...middleware)];
 const persistConfig = {enhancers};
