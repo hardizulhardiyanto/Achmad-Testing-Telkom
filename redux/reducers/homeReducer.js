@@ -2,13 +2,13 @@ import createReducer from "../createReducer";
 import {HOME_ACT_SET_REPOS} from "../action";
 
 const initialState = {
-    homeReducer: undefined
+    listRepos: undefined
 }
 
 const setHomeReducer = ( state, { resultGet }) => {
     return {
         ...state,
-        homeReducer: resultGet
+        listRepos: resultGet
     }
 }
 
